@@ -1,0 +1,128 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+img {
+    user-select: none; /* so it wont be highlighted when ctrl a */
+}
+:root {
+    --color1: rgb(61, 61, 61);
+    --color2: rgb(48, 48, 48);
+    --color3: rgb(26, 26, 26);
+    --text-color: rgb(208, 208, 208);
+}
+body {
+    background-color: var(--color1);
+    height: 100vh;
+    padding: 0 15vw;
+}
+.container {
+    height: auto;
+    width: 70vw;
+}
+nav {
+    background-color: var(--color3);
+    height: 8vh;
+    position: sticky;
+    top: 0;
+}
+
+.sanji {
+    width: 100%;
+    height: auto;
+}
+header {
+    position: sticky;
+    top: 0;
+}
+nav {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    box-shadow: 0 0 15px black;
+}
+button {
+    border: none;
+    
+    background-color: var(--color3);
+    color: white;
+    font-size: 2vh;
+    font-family: 'Lexend';
+}
+.home {
+    font-weight: 600;
+}
+.menu {
+    border-left: 1px solid var(--color2);
+}
+.about {
+    border-left: 1px solid var(--color2);
+}
+p {
+    font-family: 'Lexend';
+    font-size: 3vh;
+    text-align: center;
+    margin: 5vh 13vw;
+    font-weight: 150;
+    position: relative;
+}
+p::after {
+    content: '';
+    height: 0.5vh;
+    width: 20vw;
+    position: absolute;
+    background-color: var(--text-color);
+    bottom: -3vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#content {
+    height: auto;
+    width: 70vw;
+    background-color: var(--color2);
+    color: var(--text-color);
+    box-sizing: border-box;
+    padding-bottom: 10vh ;
+        box-shadow: 0 0 15px black;
+}
+.themenu {
+    border: lightgoldenrodyellow 1px solid;
+    border-radius: 1vh;
+    display: grid;
+    grid-template-rows: 1.2fr 3fr 3fr 3fr;
+    /* grid-auto-flow: column; */
+    justify-content: center;
+    text-align: center;
+    padding: 7vh 15vh;
+    font-family: 'dancing script';
+}
+.menutitle {
+    box-sizing: border-box;
+    color: lightgoldenrodyellow;
+    font-size: 100px;
+    margin-bottom: 0vh;
+}
+.submenutitle {
+    font-size: 40px;
+}
+.price {
+    font-size: 30px;
+    margin-bottom: 1vh;
+    font-family: 'birthstone';
+}
+.food {
+    height: 300px;
+    width: auto;
+    border-radius: 1vh;
+    margin: 2vh 0px;
+}
+.desc {
+    font-size: 30px;
+    font-family: 'birthstone';
+}
+.abouttitle {
+    text-align: center;
+    font-family: 'lexend';
+    font-size: 6vh;
+    padding: 10vh 0 0  0;
+}
