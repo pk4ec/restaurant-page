@@ -3,7 +3,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development", //uhh
+  mode: "production", // either development/production
   entry: "./src/index.js", // file for input (js file)
   output: { // object containing output stuff
     filename: "main.js", // what webpack outputs as
@@ -35,7 +35,7 @@ module.exports = {
         loader: "html-loader", // loads pic in html file
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i, // same (?)
+        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i, // same (?)
         type: "asset/resource", // uh this loads pics for js
       }
     ],

@@ -1,7 +1,7 @@
 import "./style.css"
 import { div } from "./menu"
 import { divs } from "./about"
-import sanjisrc from './pic/sanji.png' // this how img src with webpack works
+import sanjisrc from './pic/sanji.webp' // this how img src with webpack works
 
 const content = document.querySelector('#content')
     content.appendChild(Object.assign(document.createElement('img'), { src: sanjisrc, className: 'sanji'}))
